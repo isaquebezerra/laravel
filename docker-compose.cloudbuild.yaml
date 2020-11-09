@@ -37,6 +37,9 @@ services:
       - "33006:3306"
     volumes:
       - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=secret
+      - MYSQL_DATABASE=laravel
     networks:
       - app-network
 
