@@ -24,7 +24,7 @@ steps:
     name: 'docker'
     args: ['exec','-t','app','php','/var/www/artisan','key:generate']
 
-  - id: "Rodando migrations"
+  - id: "Rodando Migrations"
     name: 'docker'
     args: ['exec','-t','app','php','/var/www/artisan','migrate']
 
