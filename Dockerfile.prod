@@ -14,7 +14,7 @@ RUN composer install && \
     chmod -R 777 storage
 
 RUN chown -R www-data:www-data /var/www
-RUN ln -s public html
+# RUN ln -s public html
 RUN usermod -u 1000 www-data
 
 # USER www-data
