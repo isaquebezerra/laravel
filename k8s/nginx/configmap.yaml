@@ -8,7 +8,7 @@ data:
     server {
     	listen 80;
     	index index.php index.html;
-    	root /var/www/public;
+    	root /var/www;
 
     	location ~ \.php$ {
     		try_files $uri =404;
