@@ -37,7 +37,7 @@ steps:
     args: [ 'build','-t','gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA','-f','Dockerfile.prod','.']
 
   - id: "Pushing image"
-    name: 'docker'
+    name: 'gcr.io/cloud-builders/docker'
     args: ['push','gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA']
 
   - id: "Adjusting deployment file - k8s"
